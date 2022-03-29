@@ -1,0 +1,12 @@
+p   {
+        background-color: darksalmon;
+    color: blue;
+    text-decoration:    underline;
+    font-weight:    900;
+    font-size:  500%;
+    text-align: center;
+}
+h1 {
+    text-shadow: -10px 10px red;
+  }    
+    
