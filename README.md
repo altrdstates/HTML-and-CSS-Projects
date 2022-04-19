@@ -2,8 +2,9 @@
 
 These projects include:
 examples of: Python
-Basic HTML & Hav
+Basic HTML & Javascript
+BAsic HTML & CSS
 Bootstrap
 
 
-and most importantly my portfolio
+and most importantly my portfolio that is now live online
