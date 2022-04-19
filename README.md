@@ -1,1 +1,9 @@
-# This repository will contain HTML & CSS Projects from the course. All work on this course should be done within this local repository.
+# This repository contains all of the LMS projects I have worked on. These projects are written in HTML & CSS.
+
+These projects include:
+examples of: Python
+Basic HTML & Hav
+Bootstrap
+
+
+and most importantly my portfolio
