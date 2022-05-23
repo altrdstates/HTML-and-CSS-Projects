@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>The Dream Lighitng</title>
-        <link rel="stylesheet" href="./CSS/one_page_website.css">
+
+<head>
+    <meta charset="utf-8">
+    <title>The Dream Lighitng</title>
+    <link rel="stylesheet" href="./CSS/one_page_website.css">
 </head>
+
 <body>
 
     <!-- NAV -->
     <div class="wrap">
         <div class="menu-container">
             <ul class="menu">
-                <a href="#home"><li>HOME</li></a>
-                <a href="#gallery"><li>GALLERY</li></a>
-                <a href="#contact"><li>RESERVATIONS</li></a>
+                <a href="#home">
+                    <li>HOME</li>
+                </a>
+                <a href="#gallery">
+                    <li>GALLERY</li>
+                </a>
+                <a href="#contact">
+                    <li>RESERVATIONS</li>
+                </a>
             </ul>
         </div>
     </div>
     <!-- END NAV -->
 
-<!-- HOME -->
+    <!-- HOME -->
     <div id="home">
         <div class="container">
             <div class="text-center">
-                <span class="head-main">The Dream Lighitng</span>
+                <span class="head-main">The Dream Lighitng
+                </span>
             </div>
         </div>
     </div>
-<!-- END HOME -->
+    <!-- END HOME -->
 
-<!-- GALLERY -->
+    <!-- GALLERY -->
     <section id="gallery">
         <div class="container">
             <h1>GALLERY</h1>
@@ -41,7 +50,7 @@
                         <img src="./images/thumbnail_1.jpg" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
-                            <p>We constantly updating our inventory,please check back for new additions</p>
+                            <p>Please check back for new inventory</p>
                         </div>
                     </div>
                 </div>
@@ -53,7 +62,7 @@
                         <img src="./images/thumbnail_2.jpeg" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
-                            <p>We constantly updating our inventory,please check back for new additions</p>
+                            <p>Please check back for new inventory</p>
                         </div>
                     </div>
                 </div>
@@ -65,7 +74,7 @@
                         <img src="./images/thumbnail_3.JPG" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
-                            <p>We constantly updating our inventory,please check back for new additions</p>
+                            <p>Please check back for new inventory</p>
                         </div>
                     </div>
                 </div>
@@ -77,7 +86,7 @@
                         <img src="./images/thumbnail_4.JPG" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
-                            <p>We constantly updating our inventory,please check back for new additions</p>
+                            <p>Please check back for new inventory</p>
                         </div>
                     </div>
                 </div>
@@ -89,7 +98,7 @@
                         <img src="./images/thumbnail_5.jpg" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
-                            <p>We constantly updating our inventory,please check back for new additions</p>
+                            <p>Please check back for new inventory</p>
                         </div>
                     </div>
                 </div>
@@ -101,7 +110,7 @@
                         <img src="./images/thumbnail_6.png" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
-                            <p>We constantly updating our inventory,please check back for new additions</p>
+                            <p>Please check back for new inventory</p>
                         </div>
                     </div>
                 </div>
@@ -113,7 +122,7 @@
                         <img src="./images/thumbnail_7.jpg" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
-                            <p>We constantly updating our inventory,please check back for new additions</p>
+                            <p>Please check back for new inventory</p>
                         </div>
                     </div>
                 </div>
@@ -125,7 +134,7 @@
                         <img src="./images/thumbnail_8.jpg" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
-                            <p>We constantly updating our inventory,please check back for new additions</p>
+                            <p>Please check back for new inventory</p>
                         </div>
                     </div>
                 </div>
@@ -137,7 +146,7 @@
                         <img src="./images/thumbnail_9.png" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
-                            <p>We constantly updating our inventory,please check back for new additions</p>
+                            <p>Please check back for new inventory</p>
                         </div>
                     </div>
                 </div>
@@ -147,19 +156,94 @@
             </div>
         </div>
     </section>
-<!-- END GALLERY -->
+    <!-- END GALLERY -->
 
-<!-- RSVP -->
+    <!-- Images used to open the lightbox-->
+    <div class="row">
+        <div class="column">
+            <img src="./images/thumbnail_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" height="300px" width="300px">
+        </div>
+        <div class="column">
+            <img src="./images/thumbnail_2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow" height="300px" width="300px">
+        </div>
+        <div class="column">
+            <img src="./images/thumbnail_3.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow" height="300px" width="300px">
+        </div>
+        <div class="column">
+            <img src="./images/thumbnail_4.JPG" onclick="openModal();currentSlide(4)" class="hover-shadow" height="300px" width="300px">
+        </div>
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="./images/thumbnail_1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="./images/thumbnail_2.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="./images/thumbnail_3.JPG" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="./images/thumbnail_4.JPG" style="width:100%">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="./images/thumbnail_1.jpg" onclick="currentSlide(1)" alt="Bedside Lamps">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/thumbnail_2.jpeg" onclick="currentSlide(2)"
+                    alt="Chrome and Acrylic floor lamp">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/thumbnail_3.JPG" onclick="currentSlide(3)" alt="Wabi Sabi wood table">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="./images/thumbnail_4.JPG" onclick="currentSlide(4)" alt="Herman Miller Clock">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- RSVP -->
     <section id="contact">
         <div class="container">
             <div class="heading-padding">
                 <h1 class="heading-padding">RESERVATIONS</h1>
                 <div class="reservation">
-                    <h2><span>Your adventure is just around the moon.</span>
-                    <br>Reserve your flight today!
+                    <h2><span>Exclusive membership discounts</span>
+                        <br>Sign up for 10% off
                     </h2>
                     <p class="rsvp-text">
-                        Please provide us with your basic contact information.
+                        <center>Please provide your contact info below.
+                        </center>
                     </p>
                     <div class="form-rsvp">
                         <form action="" method="post">
@@ -170,22 +254,26 @@
                             <div class="form-spacer">
                                 <label class="terms">"Terms and Conditions</label>
                             </div>
-                            <div class="submit"></div>    
-                                <input type="submit" value="submit">
-                            </div>
-                        </form>   
+                            <div class="submit"></div>
+                            <input type="submit" value="submit">
                     </div>
+                    </form>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-<!-- END RSVP -->
+    <!-- END RSVP -->
 
-<!-- FOOTER -->
-<div id="footer">
-    www.thedreamlighting.com &nbsp;| &nbsp; &copy; 2021
-</div>
-<!-- END FOOTER -->
+    <!-- FOOTER -->
+    <div id="footer">
+        www.thedreamlighting.com &nbsp;| &nbsp; &copy; 2021
+    </div>
+    <!-- END FOOTER -->
+
+    <script src="JS/one_page_wesite.js" defer>
+    </script>
 
 </body>
+
 </html>
