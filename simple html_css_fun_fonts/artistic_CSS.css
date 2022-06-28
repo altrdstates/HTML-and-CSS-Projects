@@ -1,0 +1,43 @@
+
+
+p {
+    color: purple;
+    text-align: center;
+}
+
+/* modern font */
+.modern {
+    font-family: 'MuseoModerno', cursive;
+}
+/* end modern font */
+
+
+/* goofy font */
+.goofy {
+    font-family: 'Slackey', cursive;
+}
+/* end goofy font */
+
+
+/* professional font */
+.artistic {
+    font-family: 'PT Serif', serif;
+}
+/* end professional font */
+
+/* old fashioned font */
+.old {
+    font-family: 'Lora', serif;
+}
+/* end old fashioned font */
+
+
+
+/* artistic font */
+
+.artistic {
+    font-family:'Aclonica', sans-serif;
+}
+
+/* end artistic font */
+
