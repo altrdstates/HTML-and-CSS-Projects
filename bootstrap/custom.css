@@ -8,7 +8,7 @@
     display:inline;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    
+ 
 }
 
 .footer {
@@ -16,9 +16,9 @@
 }
 
 .footer-heading > li {
-    padding-left: 160px;
-    padding-right: 160px;
-    display:inline;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: inline;
     text-align: center;
 }
 
