@@ -1,0 +1,42 @@
+.navbar{
+    background-color: rgb(115, 147, 178);
+}
+
+
+.navbar-nav > li {
+    padding-left: 110px;
+    padding-right: 110px;
+    display:inline;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer {
+    background-color: rgb(189, 146, 65);
+    height: 50px;
+}
+
+.footer-heading > li {
+    padding-left: 150px;
+    padding-right: 150px;
+    display: inline;
+    text-align: center;
+}
+
+
+a{
+    color: white;
+    text-align: center;
+}
+
+.mainimage {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28pt;
+    font-weight: 800;
+}
+
+
