@@ -9,7 +9,7 @@
     <title>Animation</title>
 
     <style>
-        
+       /* box within box */
         .parent {
             background-color:blueviolet;
             height: 400px;
@@ -32,7 +32,7 @@
             }
         }
         
-       
+       /* vibrate */
         .vibrate-1 {
 	    -webkit-animation: vibrate-1 0.3s linear infinite both;
 	    animation: vibrate-1 0.3s linear infinite both;
@@ -46,11 +46,16 @@
     <script src="https://unpkg.com/@mojs/core"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
 
+<!-- button that activated circle that enlarges-->
 <button class="play">Play</button>
 <div class="container"></div>
 
 <div class="parent">
     <div class="child"></div>
+</div>
+
+<div>
+    <p class="vibrate-1"> sample text </p>
 </div>
 
 
