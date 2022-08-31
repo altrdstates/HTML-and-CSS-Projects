@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="animation.js" defer></script>
+    <link rel="stylesheet" href="animation.css">
+    <title>Animation</title>
+
+    <style>
+        .parent {
+            background-color:blueviolet;
+            height: 400px;
+            width: 400px;
+        }
+    
+        .child {
+            background-color: red;
+            height: 50%;
+            width: 50%;
+            transition: transform 1s ease-in;
+        }
+
+        .parent:hover .child {
+            animation: left-to-right 1s ease-in forwards;
+        }
+        @keyframes left-to-right {
+            100% {
+            transform: translateX(100%);
+            }
+        }
+        
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <script src="https://unpkg.com/@mojs/core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+
+<button class="play">Play</button>
+<div class="container"></div>
+
+<div class="parent">
+    <div class="child"></div>
+</div>
+
+
+</body>
+
+</html>
