@@ -1,4 +1,4 @@
-.h1 {
+.title {
     text-align: center;
     font-family: 'Inter', 
 }
@@ -12,12 +12,11 @@ img {
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;
   }
   
   /* Change the color of links on hover */
@@ -32,9 +31,10 @@ img {
     color: white;
   }
 
-
-
-
+  .topnav {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 
 body {
     background-color: rgb(250, 249, 247);
@@ -43,6 +43,8 @@ body {
   .container {
     display: inline-block;
     cursor: pointer;
+    position: absolute;
+    right: 20px;
   }
   
   .bar1, .bar2, .bar3 {
